@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "dynamic-image-tool"
+client_id = "533ff30631e844f97fb566eced37b574"
+application_url = "https://example-tears-stars-andreas.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://example-tears-stars-andreas.trycloudflare.com/auth/callback",
+  "https://example-tears-stars-andreas.trycloudflare.com/auth/shopify/callback",
+  "https://example-tears-stars-andreas.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "first-storedmx.myshopify.com"
